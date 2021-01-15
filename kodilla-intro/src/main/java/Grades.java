@@ -33,6 +33,7 @@ public class Grades {
         for (int i = 0; i < this.size; i++) {
             aveGrade = aveGrade + this.grades[this.size-1];
         }
+        aveGrade = aveGrade/this.size;
         return aveGrade;
     }
 }
