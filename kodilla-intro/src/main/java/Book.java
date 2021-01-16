@@ -2,12 +2,12 @@ public class Book {
     private String author;
     private String title;
 
-    public Book(String a, String t) {
-        this.author = a;
-        this.title = t;
+    public Book(String author, String title) {
+        this.author = author;
+        this.title = title;
     }
 
-    public static void of(String a, String t) {
-        Book book = new Book(a, t);
+    public static void of(String author, String title) {
+        Book book = new Book(author, title);
     }
 }
