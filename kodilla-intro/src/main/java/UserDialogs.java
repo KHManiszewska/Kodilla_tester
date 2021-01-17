@@ -32,4 +32,19 @@ public class UserDialogs {
         int val = scanner.nextInt();
         return val;
     }
+    public static String getUserColourSelection() {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("Select colour (B-blue, Y-yellow, R-red, O-orange):");
+            String calc = scanner.nextLine().trim().toUpperCase();
+            switch (calc) {
+                case "B": return "blue";
+                case "Y": return "yellow";
+                case "R": return "red";
+                case "O": return "orange";
+                default:
+                    System.out.println("Wrong choice. Try again.");
+            }
+        }
+    }
 }
