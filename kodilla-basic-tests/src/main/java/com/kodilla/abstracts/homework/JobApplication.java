@@ -2,9 +2,9 @@ package com.kodilla.abstracts.homework;
 
 public class JobApplication {
     public static void main(String[] args) {
-        Job nurse = new Job (2300,"injection, serve medicine, basic health tests");
-        Job teacher = new Job (2400, "learn, test knowledge, cooperate with parents");
-        Job scientist = new Job (2500, "research, read, explore, write articles");
+        Job nurse = new Nurse (2300,"injection, serve medicine, basic health tests");
+        Job teacher = new Teacher (2400, "learn, test knowledge, cooperate with parents");
+        Job scientist = new Scientist (2500, "research, read, explore, write articles");
 
         Person AlaS = new Person("Ala", 42, nurse);
         Person GienekW = new Person("Gienek", 34, scientist);

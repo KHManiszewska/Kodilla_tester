@@ -2,7 +2,7 @@ package com.kodilla.abstracts.homework;
 
 import javax.print.DocFlavor;
 
-public class Job {
+public abstract class Job {
     public double salary;
     public String responsibilities;
 
