@@ -37,6 +37,7 @@ public class Student {
             this.history.add(grade);
         }
     }
+
     public double getMathsAverage() {
         return this.maths.getAverage();
     }
@@ -53,4 +54,8 @@ public class Student {
         return this.history.getAverage();
     }
 
+    public double getAverage() {
+        double sum = this.geography.getAverage() + this.history.getAverage() + this.maths.getAverage() + this.physics.getAverage();
+        return sum/4;
+    }
 }
