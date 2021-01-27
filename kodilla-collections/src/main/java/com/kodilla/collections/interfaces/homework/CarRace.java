@@ -1,13 +1,11 @@
 package com.kodilla.collections.interfaces.homework;
 
-import com.kodilla.collections.interfaces.Shape;
-import com.kodilla.collections.interfaces.Square;
 
 public class CarRace {
     public static void main(String[] args) {
-        Opel opel = new Opel();
-        Volvo volvo = new Volvo();
-        Porche porche = new Porche();
+        Opel opel = new Opel(6, 8);
+        Volvo volvo = new Volvo(10, 15);
+        Porche porche = new Porche(20, 25);
 
         doRace(opel);
         doRace(volvo);
