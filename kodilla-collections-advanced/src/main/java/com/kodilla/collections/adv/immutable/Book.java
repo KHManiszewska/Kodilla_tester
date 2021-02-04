@@ -1,6 +1,6 @@
 package com.kodilla.collections.adv.immutable;
 
-public class Book {
+public final class Book {
     protected final String author;
     protected final String title;
 

@@ -1,4 +1,4 @@
 package com.kodilla.collections.adv.immutable.homework;
 
-public class TaskHacked extends Task{
+public class TaskHacked {
 }
