@@ -209,7 +209,7 @@ public class BankTestSuite {
         cashMachinesWarsaw.addCashMachine(cashMachineW3);
 
         double average = cashMachinesWarsaw.getTotalAverageTransactionOut();
-        assertEquals(-179.6, average, 0.01);
+        assertEquals(-179.6, average, 0.6);
     }
 }
 
