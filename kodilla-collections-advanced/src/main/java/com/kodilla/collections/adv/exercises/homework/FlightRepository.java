@@ -16,7 +16,7 @@ public class FlightRepository {
     static List<Flight> getFlightsTable(String localAirport){
         List<Flight> localFlights = new ArrayList<>();
         for (Flight flight : flights){
-            if (flight.arrival == localAirport || flight.departure == localAirport) {
+            if (flight.arrival.equals(localAirport) || flight.departure.equals(localAirport)) {
                 localFlights.add(flight);
             }
         }

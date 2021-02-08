@@ -9,7 +9,7 @@ public class FlightFinder {
         List<Flight> flights = FlightRepository.getFlightsTable(departure);
         List<Flight> flightsFrom = new ArrayList<>();
         for (Flight flight : flights){
-            if (flight.departure == departure)
+            if (flight.departure.equals(departure))
                 flightsFrom.add(flight);
         }
         return flightsFrom;
@@ -18,7 +18,7 @@ public class FlightFinder {
         List<Flight> flights = FlightRepository.getFlightsTable(arrival);
         List<Flight> flightsTo = new ArrayList<>();
         for (Flight flight : flights){
-            if (flight.arrival == arrival)
+            if (flight.arrival.equals(arrival))
                 flightsTo.add(flight);
         }
         return flightsTo;
