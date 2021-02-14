@@ -1,10 +1,12 @@
 package com.kodilla.exception;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class AirportRepositoryTestSuite {
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+public class AirportRepositoryTestSuite {
     @Test
     public void testIsAirportInUse() throws AirportNotFoundException {
         // given
@@ -15,8 +17,7 @@ class AirportRepositoryTestSuite {
         assertTrue(isWarsawInUse);
     }
 
-    @Test
-    //(expected = AirportNotFoundException.class)
+    @Test(expected = AirportNotFoundException.class)
     public void testIsAirportInUse_withException() throws AirportNotFoundException {
         // given
         AirportRepository airportRepository = new AirportRepository();

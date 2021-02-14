@@ -1,12 +1,11 @@
 package com.kodilla.exception.homework;
 
-import com.kodilla.exception.AirportNotFoundException;
-import com.kodilla.exception.AirportRepository;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class WarehouseTestSuite {
+import static org.junit.Assert.assertEquals;
+
+public class WarehouseTestSuite {
     Order order1 = new Order("PL/123");
     Order order2 = new Order("PL/1234");
     Order order3 = new Order("PL/12345");
@@ -26,8 +25,7 @@ class WarehouseTestSuite {
         // then
         assertEquals(orderExp, orderActual);
     }
-    @Test
-            //(expected = OrderDoesntExistException.class)
+    @Test(expected = OrderDoesntExistException.class)
     protected void testGetOrder_withException() throws OrderDoesntExistException {
         // given
         Warehouse.addOrder(order1);
