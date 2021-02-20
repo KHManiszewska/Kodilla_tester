@@ -1,11 +1,12 @@
 package com.kodilla.exception.homework;
 
-
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
-public class WarehouseTestSuite {
+
+public class WarehouseTest {
     Order order1 = new Order("PL/123");
     Order order2 = new Order("PL/1234");
     Order order3 = new Order("PL/12345");
@@ -26,7 +27,7 @@ public class WarehouseTestSuite {
         assertEquals(orderExp, orderActual);
     }
     @Test(expected = OrderDoesntExistException.class)
-    protected void testGetOrder_withException() throws OrderDoesntExistException {
+    public void testGetOrder_withException() throws OrderDoesntExistException {
         // given
         Warehouse.addOrder(order1);
         Warehouse.addOrder(order2);
@@ -37,7 +38,6 @@ public class WarehouseTestSuite {
         // when
         Order orderActual = Warehouse.getOrder(isNotOrder);
         // then
-        assertEquals(orderExp, orderActual);
+        assertNotEquals(orderExp, orderActual);
     }
-
 }

@@ -24,7 +24,7 @@ public class ForumStats {
                 .map(u -> u.getNumberOfPost())
                 .mapToInt(n->n)
                 .average()                                 // [3]
-                .getAsDouble();                            // [4]
+                .getAsDouble();                             // [4]
         System.out.println("średnia liczba postów dla młodych: "+avgYoung);
     }
 
