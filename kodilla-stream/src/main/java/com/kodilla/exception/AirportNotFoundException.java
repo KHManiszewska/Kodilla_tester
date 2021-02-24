@@ -1,8 +1,8 @@
 package com.kodilla.exception;
 
 public class AirportNotFoundException extends Exception {
-    public AirportNotFoundException() {
-        super();
+    public AirportNotFoundException(String message) {
+        super(message);
         System.out.println("błąd danych");
     }
 }

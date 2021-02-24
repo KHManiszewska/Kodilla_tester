@@ -1,9 +1,10 @@
 package com.kodilla.exception.homework;
 
+import com.kodilla.exception.AirportNotFoundException;
+import com.kodilla.exception.AirportRepository;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.*;
 
 
 public class WarehouseTest {
@@ -26,7 +27,7 @@ public class WarehouseTest {
         // then
         assertEquals(orderExp, orderActual);
     }
-    @Test(expected = OrderDoesntExistException.class)
+    @Test
     public void testGetOrder_withException() throws OrderDoesntExistException {
         // given
         Warehouse.addOrder(order1);
@@ -34,10 +35,11 @@ public class WarehouseTest {
         Warehouse.addOrder(order3);
         Warehouse.addOrder(order4);
         String isNotOrder = "PL/12346";
-        Order orderExp = new Order(isNotOrder);
+
         // when
-        Order orderActual = Warehouse.getOrder(isNotOrder);
+        OrderDoesntExistException exeption = assertThrows(OrderDoesntExistException.class, () -> Warehouse.getOrder(isNotOrder));
+
         // then
-        assertNotEquals(orderExp, orderActual);
+        assertEquals("Order Does Not Exist", exeption.getMessage());
     }
 }

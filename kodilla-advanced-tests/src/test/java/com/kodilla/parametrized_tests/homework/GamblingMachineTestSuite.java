@@ -52,9 +52,9 @@ class GamblingMachineTestSuite {
     }
 
     @ParameterizedTest
-            // (expected = InvalidNumbersException.class)
     @CsvFileSource(resources = "/givenNotValidNumbers.csv")
     void areGivenSixNumbersNotValid(int number1, int number2, int number3, int number4, int number5, int number6) throws InvalidNumbersException{
+        // given
         Set<Integer> givenNumbers = new HashSet<>();
         givenNumbers.add(number1);
         givenNumbers.add(number2);
@@ -62,25 +62,24 @@ class GamblingMachineTestSuite {
         givenNumbers.add(number4);
         givenNumbers.add(number5);
         givenNumbers.add(number6);
-        boolean isValid = true;
-        System.out.println(givenNumbers);
-        isValid = GamblingMachine.validateNumbers(givenNumbers);
-        assertFalse(isValid);
+        // when
+        InvalidNumbersException exeption = assertThrows(InvalidNumbersException.class, () -> GamblingMachine.validateNumbers(givenNumbers));
+        // then
+        assertEquals("Wrong numbers provided", exeption.getMessage());
     }
 
     @Test
-            // (expected = InvalidNumbersException.class)
     void areGivenNoSixNumbersValid() throws InvalidNumbersException{
-        boolean isValid = true;
+        // given
         Set<Integer> givenNumbers = new HashSet<>();
         givenNumbers.add(4);
-        // givenNumbers.add(12);
         givenNumbers.add(27);
         givenNumbers.add(64);
         givenNumbers.add(32);
-        // givenNumbers.add(-1);
-        isValid = GamblingMachine.validateNumbers(givenNumbers);
-        assertFalse(isValid);
+        // when
+        InvalidNumbersException exeption = assertThrows(InvalidNumbersException.class, () -> GamblingMachine.validateNumbers(givenNumbers));
+        // then
+        assertEquals("Wrong numbers provided", exeption.getMessage());
     }
 
     @ParameterizedTest

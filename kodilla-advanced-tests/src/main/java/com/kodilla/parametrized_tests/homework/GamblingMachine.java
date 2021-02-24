@@ -20,11 +20,11 @@ public class GamblingMachine {
 
     public static boolean validateNumbers(Set<Integer> numbers) throws InvalidNumbersException {
         if (numbers.size() != 6) {
-            throw new InvalidNumbersException();
+            throw new InvalidNumbersException("Wrong numbers provided");
         }
 
         if (numbers.stream().anyMatch(number -> number < 1 || number > 49)) {
-            throw new InvalidNumbersException();
+            throw new InvalidNumbersException("Wrong numbers provided");
         }
         return true;
     }

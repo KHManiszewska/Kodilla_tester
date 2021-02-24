@@ -22,6 +22,6 @@ public class Warehouse {
             if (o.getNumber().equals(number))
             return o;
         }
-        throw new OrderDoesntExistException();
+        throw new OrderDoesntExistException("Order Does Not Exist");
     }
 }

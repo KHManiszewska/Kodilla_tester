@@ -2,8 +2,7 @@ package com.kodilla.exception;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class AirportRepositoryTest {
 
@@ -18,13 +17,14 @@ public class AirportRepositoryTest {
         assertTrue(isWarsawInUse);
     }
 
-    @Test(expected = AirportNotFoundException.class)
+    @Test
     public void testIsAirportInUse_withException() throws AirportNotFoundException {
         // given
         AirportRepository airportRepository = new AirportRepository();
         // when
-        boolean isViennaInUse = airportRepository.isAirportInUse("Vienna");
+        AirportNotFoundException exeption = assertThrows(AirportNotFoundException.class, () -> airportRepository.isAirportInUse("Vienna"));
+        // boolean isViennaInUse = airportRepository.isAirportInUse("Vienna");
         // then
-        assertFalse(isViennaInUse);
+        assertEquals("Airport Does Not Exist", exeption.getMessage());
     }
 }
