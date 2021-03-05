@@ -10,13 +10,23 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class SimpleApplicationTestSuite {
 
     @Test
-    public void shouldReturnCorrectMessage() {
+    public void shouldReturnSkypeCorrectMessage() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic"); // [1]
-        SkypeMessageService bean = context.getBean(SkypeMessageService.class);
+        MessageService bean = context.getBean(MessageService.class);
         String message = bean.send("Test", "Any receiver");
         Assertions.assertNotNull(message);
         Assertions.assertEquals("Sending [Test] to: Any receiver using Skype", message);
     }
+
+    @Test
+    public void shouldReturnFacebookCorrectMessage() {
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic"); // [1]
+        MessageService bean = context.getBean(MessageService.class);
+        String message = bean.send("Test", "Any receiver");
+        Assertions.assertNotNull(message);
+        Assertions.assertEquals("Sending [Test] to: Any receiver using Facebook", message);
+    }
+
     @Test
     public void shouldProcessMessage() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
