@@ -11,21 +11,27 @@ import java.util.Random;
 
 @Configuration
 public class CarSettlement {
-    public static String season = "lato";
-    public static boolean nightTime = false;
+    private static String localSeason;
+    private static boolean localNightTime;
+    // public static String season = "lato";
+    // public static boolean nightTime = false;
 
+    public static void getSeasonAndTime(String season, boolean nightTime) {
+        localSeason = season;
+        localNightTime = nightTime;
+    }
 
     @Bean
     public Car seasonCar() {
         Car car;
-        boolean lightsOn = nightTime;
+        boolean lightsOn = localNightTime;
 
-        if (season.equals("lato")) {
+        if (localSeason.equals("lato")) {
              car = new Cabrio();
              if (lightsOn) {
                  car.headlightsTurnedOn();
              }
-        } else if (season.equals("zima")) {
+        } else if (localSeason.equals("zima")) {
             car = new SUV();
             if (lightsOn) {
                 car.headlightsTurnedOn();

@@ -13,8 +13,9 @@ class CarSettlementTestSuite {
     @Test
     public void shouldCreateCabrioWhenSummer() {
         //Given
-        CarSettlement.season = "lato";
-        CarSettlement.nightTime = true;
+        // CarSettlement.season = "lato";
+        // CarSettlement.nightTime = true;
+        CarSettlement.getSeasonAndTime("lato", true);
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Car car = (Car) context.getBean("seasonCar");
         //When
@@ -26,8 +27,9 @@ class CarSettlementTestSuite {
     @Test
     public void shouldCreateSUVWhenWinter() {
         //Given
-        CarSettlement.season = "zima";
-        CarSettlement.nightTime = true;
+        // CarSettlement.season = "zima";
+        // CarSettlement.nightTime = true;
+        CarSettlement.getSeasonAndTime("zima", true);
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Car car = (Car) context.getBean("seasonCar");
         //When
@@ -39,8 +41,9 @@ class CarSettlementTestSuite {
     @Test
     public void shouldCreateSedanWhenSpringOrAutumn() {
         //Given
-        CarSettlement.season = "wiosna";
-        CarSettlement.nightTime = true;
+        // CarSettlement.season = "wiosna";
+        // CarSettlement.nightTime = true;
+        CarSettlement.getSeasonAndTime("wiosna", true);
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Car car = (Car) context.getBean("seasonCar");
         //When
@@ -52,8 +55,9 @@ class CarSettlementTestSuite {
     @Test
     public void shouldHeadlightsTurnedOnWhenNightTime() {
         //Given
-        CarSettlement.season = "jesien";
-        CarSettlement.nightTime = true;
+        // CarSettlement.season = "jesien";
+        // CarSettlement.nightTime = true;
+        CarSettlement.getSeasonAndTime("jesien", true);
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Car car = (Car) context.getBean("seasonCar");
         //When
@@ -66,8 +70,9 @@ class CarSettlementTestSuite {
     @Test
     public void shouldHeadlightsTurnedOffWhenDayTime() {
         //Given
-        CarSettlement.season = "lato";
-        CarSettlement.nightTime = false;
+        // CarSettlement.season = "lato";
+        // CarSettlement.nightTime = false;
+        CarSettlement.getSeasonAndTime("lato", false);
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Car car = (Car) context.getBean("seasonCar");
         //When
