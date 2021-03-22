@@ -1,27 +1,105 @@
-// plugins {
-//     id 'java'
-// }
-
-plugins {
-    id 'org.springframework.boot' version '2.2.2.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-    id 'java'
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.2.1.RELEASE")
+    }
 }
 
-group = 'com.kodilla'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '8'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+task genJaxb {
+    ext.sourcesDir = "src/main/generated-sources/jaxb"
+    ext.classesDir = "${buildDir}/classes/jaxb"
+    ext.schema = "src/main/resources/kodilla.xsd"
+
+    outputs.dir classesDir
+
+    doLast() {
+        project.ant {
+            taskdef name: "xjc", classname: "com.sun.tools.xjc.XJCTask",
+                    classpath: configurations.jaxb.asPath
+            mkdir(dir: sourcesDir)
+            mkdir(dir: classesDir)
+
+            xjc(destdir: sourcesDir, schema: schema) {
+                arg(value: "-wsdl")
+                produces(dir: sourcesDir, includes: "**/*.java")
+            }
+
+            javac(destdir: classesDir, source: 1.8, target: 1.8, debug: true,
+                    debugLevel: "lines,vars,source",
+                    classpath: configurations.jaxb.asPath) {
+                src(path: sourcesDir)
+                include(name: "**/*.java")
+                include(name: "*.java")
+            }
+
+            copy(todir: classesDir) {
+                fileset(dir: sourcesDir, erroronmissingdir: false) {
+                    exclude(name: "**/*.java")
+                }
+            }
+        }
+    }
+}
+
+configurations {
+    jaxb
+}
+
+bootJar {
+    baseName = 'kodilla-soap'
+    version =  '1.0.0'
+    from genJaxb.classesDir
+}
 
 repositories {
     mavenCentral()
 }
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-web')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    compile("org.springframework.boot:spring-boot-starter-web-services")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+//    compile('javax.xml.bind:jaxb-api:2.3.0')
+//    compile('javax.activation:activation:1.1')
+//    compile('org.glassfish.jaxb:jaxb-runtime:2.3.0')
+//    compile("wsdl4j:wsdl4j:1.6.1")
+//    jaxb("org.glassfish.jaxb:jaxb-xjc:2.2.11")
+//    compile(files(genJaxb.classesDir).builtBy(genJaxb))
+}
+// plugins {
+//     id 'java'
+// }
+
+// plugins {
+//     id 'org.springframework.boot' version '2.2.2.RELEASE'
+//    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+//    id 'java'
+//}
+
+// group = 'com.kodilla'
+// version = '0.0.1-SNAPSHOT'
+// sourceCompatibility = '8'
+
+// repositories {
+//    mavenCentral()
+// }
+
+// dependencies {
+//    implementation('org.springframework.boot:spring-boot-starter-web')
+//    testImplementation('org.springframework.boot:spring-boot-starter-test')
 //    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
 //    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
-}
+// }
 
 // buildscript {
 //    ext {
@@ -56,6 +134,6 @@ dependencies {
 //    // testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
 //    // testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 // }
-test {
-   useJUnitPlatform()
-}
+// test {
+//   useJUnitPlatform()
+//}
