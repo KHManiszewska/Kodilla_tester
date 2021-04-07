@@ -1,5 +1,6 @@
 package com.kodilla.selenium.allegro;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,12 +16,22 @@ public class AllegroTestingApp {
         driver.get("https://allegro.pl/");
 
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@data-box-name=\"allegro.metrumHeader.search\"]/div/form/div/input")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[1]")));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("dialog-content")));
 
-        driver.navigate().to("https://allegro.pl/dzial/elektronika");
+        // Alert alert = driver.switchTo().alert();
+        // alert.accept();
 
-        WebElement inputField = driver.findElement(By.xpath("//*[@data-box-name=\"allegro.metrumHeader.search\"]/div/form/div/input")); // [4]
+        WebElement categoryCombo = driver.findElement(By.xpath("//select[1]"));
+        Select categorySelect = new Select(categoryCombo);
+        categorySelect.selectByIndex(3);
+
+        // driver.navigate().to("https://allegro.pl/dzial/elektronika");
+
+        WebElement inputField = driver.findElement(By.xpath("//input[1]")); // [4]
         inputField.sendKeys("Mavic mini");
-        inputField.submit();
+
+        // WebElement inputFieldButton = driver.findElement(By.xpath("//*[@data-box-name=\"allegro.metrumHeader.search\"]/div/form/div/button"));
+        // inputFieldButton.submit();
     }
 }
