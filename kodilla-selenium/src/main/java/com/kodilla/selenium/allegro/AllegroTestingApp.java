@@ -38,13 +38,13 @@ public class AllegroTestingApp {
         WebElement inputFieldButton = driver.findElement(By.cssSelector("div > form > div > button"));
         inputFieldButton.click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//section/article")));
-                // visibilityOfAllElementsLocatedBy(By.cssSelector("section > artricle")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("section > article")));
+                // visibilityOfAllElementsLocatedBy(By.cssSelector("section > article")));
 
         List<WebElement> elements = driver.findElements(By.cssSelector("section > article"));
 
         for (int n = 0; n < elements.size(); n++) {
-            System.out.println("******************** wyświetlam element: "+n + "********************");
+            System.out.println("******************** wyświetlam element: "+n + " ********************");
             System.out.println(elements.get(n).getText());
         }
     }
