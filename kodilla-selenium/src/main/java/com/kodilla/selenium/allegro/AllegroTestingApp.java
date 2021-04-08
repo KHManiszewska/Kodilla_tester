@@ -19,6 +19,10 @@ public class AllegroTestingApp {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div > form > div > input")));
+
+        WebElement buttonField = driver.findElement(By.xpath("//div[@data-box-name=\"allegro.gdpr.consents.sheet\"]/div/div/div[2]/button"));
+        buttonField.click();
+
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("dialog-content")));
 
         // Alert alert = driver.switchTo().alert();
