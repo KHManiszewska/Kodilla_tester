@@ -11,11 +11,14 @@ public class Wallet {
     }
 
     public String withdrawFromDeposit(int money) {
+        String display = "You have enough money in your wallet";
         if (this.balance >= money) {
             this.balance -= money;
-            return "You have enough money in your wallet";
+            return display;
         }
-        return "You don't have enough money in your wallet";
+        display = "You don't have enough money in your wallet";
+        System.out.println(display);
+        return display;
     }
 
     public int getBalance() {

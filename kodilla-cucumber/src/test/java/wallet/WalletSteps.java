@@ -14,6 +14,7 @@ public class WalletSteps implements En {
     public WalletSteps() {
 
         Given("I have deposited $1200 in my wallet", () -> {
+
             wallet.deposit(1200);
             Assert.assertEquals("Incorrect wallet balance", 1200, wallet.getBalance());
 
@@ -38,12 +39,12 @@ public class WalletSteps implements En {
             cashier.withdraw(wallet, 30);
        });
 
-        Then("The {string} should be dispensed", (String string) -> {
+       Then("The {string} should be dispensed", (String string) -> {
             int slotValue = cashSlot.getContents();
             System.out.println(slotValue);
             this.answer = String.valueOf(slotValue);
             Assert.assertEquals("Incorrect slot dispensed", string, this.answer);
-        });
+       });
 
         Given("I have deposited $200 in my wallet", () -> {
             wallet.deposit(200);
@@ -74,7 +75,7 @@ public class WalletSteps implements En {
         });
 
         Then("I should see that the balance is $400", () -> {
-            this.answer = wallet.displayBalance();
+             this.answer = wallet.displayBalance();
              Assert.assertEquals("the balance of yor wallet is: $"+this.balance, this.answer);
         });
 
