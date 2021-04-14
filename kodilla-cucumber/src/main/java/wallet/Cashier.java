@@ -8,8 +8,8 @@ public class Cashier {
         this.cashSlot = cashSlot;
     }
 
-    public void withdraw(Wallet wallet, int amount) {
+    public String withdraw(Wallet wallet, int amount) {
         cashSlot.dispense(wallet, amount);
-        wallet.withdrawFromDeposit(amount);
+        return wallet.withdrawFromDeposit(amount);
     }
 }

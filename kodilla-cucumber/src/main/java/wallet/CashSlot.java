@@ -13,5 +13,4 @@ public class CashSlot {
             this.contents = amount;
         }
     }
-
 }
