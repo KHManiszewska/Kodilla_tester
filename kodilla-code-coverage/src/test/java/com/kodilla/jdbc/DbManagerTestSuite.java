@@ -6,6 +6,8 @@ import org.junit.Test;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DbManagerTestSuite {
 
@@ -69,7 +71,9 @@ public class DbManagerTestSuite {
                 "HAVING COUNT(*) > 1;";
         Statement statement = dbManager.getConnection().createStatement();
         ResultSet rs = statement.executeQuery(countQuery);
+
         int count = 0;
+
         while(rs.next()) {
             System.out.println("Current search status: "+ count);
             System.out.println(rs.getString("FIRSTNAME") + ", " +
@@ -106,9 +110,18 @@ public class DbManagerTestSuite {
         int expected = count + 2;
         Assert.assertEquals(expected, counter);
 
+        // CLEAN Database and close tools
+        sql = "DELETE FROM POSTS WHERE USER_ID=8 AND BODY ='Hi!'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM POSTS WHERE USER_ID=8 AND BODY ='I am new'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM POSTS WHERE USER_ID=8 AND BODY ='I need help!'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM POSTS WHERE USER_ID=10 AND BODY ='Halo człowieki'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM POSTS WHERE USER_ID=10 AND BODY ='Jest tam ktoś!'";
+        statement.executeUpdate(sql);
         rs.close();
         statement.close();
     }
-
-
 }
