@@ -24,7 +24,7 @@ public class TaskListRepositoryTestSuite {
     private static final String DESCRIPTION = "Learn Hibernate";
 
     @Test
-    public void testTaskRepositoryFindByDuration() {
+    public void testListTaskRepositoryFindByListName() {
         //Given
         TaskList taskList = new TaskList(NAME, DESCRIPTION);
         taskListRepository.save(taskList);

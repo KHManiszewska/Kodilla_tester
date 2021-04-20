@@ -57,10 +57,20 @@ public class DbManagerTestSuite {
         }
         int expected = count + 5;
         Assert.assertEquals(expected, counter);
-
+        sql = "DELETE FROM USERS WHERE FIRSTNAME = 'Zara' AND LASTNAME = 'Ali'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM USERS WHERE FIRSTNAME = 'Otman' AND LASTNAME = 'Use'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM USERS WHERE FIRSTNAME = 'Mark' AND LASTNAME = 'Boq'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM USERS WHERE FIRSTNAME = 'Uli' AND LASTNAME = 'Wimer'";
+        statement.executeUpdate(sql);
+        sql = "DELETE FROM USERS WHERE FIRSTNAME = 'Oli' AND LASTNAME = 'Kosiw'";
+        statement.executeUpdate(sql);
         rs.close();
         statement.close();
     }
+
     @Test
     public void testSelectUsersAndPosts() throws SQLException {
         //Given
@@ -81,15 +91,15 @@ public class DbManagerTestSuite {
             count++;
         }
 
-        String sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (8, 'Hi!')";
+        String sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (3, 'Hi!')";
         statement.executeUpdate(sql);
-        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (8, 'I am new')";
+        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (3, 'I am new')";
         statement.executeUpdate(sql);
-        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (8, 'I need help!')";
+        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (3, 'I need help!')";
         statement.executeUpdate(sql);
-        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (10, 'Halo człowieki')";
+        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (5, 'Halo człowieki')";
         statement.executeUpdate(sql);
-        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (10, 'Jest tam ktoś!')";
+        sql = "INSERT INTO POSTS(USER_ID, BODY) VALUES (5, 'Jest tam ktoś!')";
         statement.executeUpdate(sql);
 
         // When
@@ -111,15 +121,15 @@ public class DbManagerTestSuite {
         Assert.assertEquals(expected, counter);
 
         // CLEAN Database and close tools
-        sql = "DELETE FROM POSTS WHERE USER_ID=8 AND BODY ='Hi!'";
+        sql = "DELETE FROM POSTS WHERE USER_ID=3 AND BODY ='Hi!'";
         statement.executeUpdate(sql);
-        sql = "DELETE FROM POSTS WHERE USER_ID=8 AND BODY ='I am new'";
+        sql = "DELETE FROM POSTS WHERE USER_ID=3 AND BODY ='I am new'";
         statement.executeUpdate(sql);
-        sql = "DELETE FROM POSTS WHERE USER_ID=8 AND BODY ='I need help!'";
+        sql = "DELETE FROM POSTS WHERE USER_ID=3 AND BODY ='I need help!'";
         statement.executeUpdate(sql);
-        sql = "DELETE FROM POSTS WHERE USER_ID=10 AND BODY ='Halo człowieki'";
+        sql = "DELETE FROM POSTS WHERE USER_ID=5 AND BODY ='Halo człowieki'";
         statement.executeUpdate(sql);
-        sql = "DELETE FROM POSTS WHERE USER_ID=10 AND BODY ='Jest tam ktoś!'";
+        sql = "DELETE FROM POSTS WHERE USER_ID=5 AND BODY ='Jest tam ktoś!'";
         statement.executeUpdate(sql);
         rs.close();
         statement.close();
