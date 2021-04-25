@@ -1,0 +1,151 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1619370381014,851,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73475,232,5,5,https://dlapilota.pl/,23,0,13
+1619370381014,23,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,23,0,13
+1619370381038,827,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73096,114,5,5,https://dlapilota.pl/,798,0,328
+1619370381212,686,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73539,232,5,5,https://dlapilota.pl/,28,0,13
+1619370381212,28,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,28,0,13
+1619370381241,657,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73160,114,5,5,https://dlapilota.pl/,595,0,112
+1619370380910,1017,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73665,232,5,5,https://dlapilota.pl/,72,0,53
+1619370380910,74,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,72,0,53
+1619370380985,942,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73286,114,5,5,https://dlapilota.pl/,839,0,368
+1619370381412,653,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73740,232,5,5,https://dlapilota.pl/,24,0,12
+1619370381412,24,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,5,5,http://www.dlapilota.pl/,24,0,12
+1619370381437,628,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73361,114,5,5,https://dlapilota.pl/,549,0,90
+1619370381612,573,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73464,232,5,5,https://dlapilota.pl/,29,0,13
+1619370381612,29,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,29,0,13
+1619370381642,543,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73085,114,5,5,https://dlapilota.pl/,511,0,59
+1619370381868,511,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73540,232,5,5,https://dlapilota.pl/,24,0,0
+1619370381868,24,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,24,0,0
+1619370381892,487,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73161,114,5,5,https://dlapilota.pl/,446,0,0
+1619370381907,550,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73602,232,5,5,https://dlapilota.pl/,18,0,0
+1619370381907,18,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,18,0,0
+1619370381925,532,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73223,114,5,5,https://dlapilota.pl/,492,0,0
+1619370381928,614,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73517,232,5,5,https://dlapilota.pl/,16,0,0
+1619370381928,17,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,16,0,0
+1619370381945,597,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73138,114,5,5,https://dlapilota.pl/,473,0,0
+1619370382065,570,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73461,232,5,5,https://dlapilota.pl/,13,0,0
+1619370382065,13,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,5,5,http://www.dlapilota.pl/,13,0,0
+1619370382078,557,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73082,114,5,5,https://dlapilota.pl/,478,0,0
+1619370382186,510,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73530,232,5,5,https://dlapilota.pl/,12,0,0
+1619370382186,12,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,12,0,0
+1619370382198,498,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73151,114,5,5,https://dlapilota.pl/,458,0,0
+1619370382379,642,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73596,232,5,5,https://dlapilota.pl/,38,0,0
+1619370382379,38,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,38,0,0
+1619370382417,604,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73217,114,5,5,https://dlapilota.pl/,540,0,0
+1619370382458,620,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73610,232,5,5,https://dlapilota.pl/,18,0,0
+1619370382458,18,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,18,0,0
+1619370382476,602,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73231,114,5,5,https://dlapilota.pl/,545,0,0
+1619370382542,617,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73560,232,5,5,https://dlapilota.pl/,13,0,0
+1619370382542,13,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,13,0,0
+1619370382556,603,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73181,114,5,5,https://dlapilota.pl/,501,0,0
+1619370382636,539,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73548,232,5,5,https://dlapilota.pl/,20,0,0
+1619370382636,20,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,5,5,http://www.dlapilota.pl/,20,0,0
+1619370382656,519,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73169,114,5,5,https://dlapilota.pl/,442,0,0
+1619370382696,559,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73682,232,5,5,https://dlapilota.pl/,19,0,0
+1619370382696,19,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,19,0,0
+1619370382715,540,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73303,114,5,5,https://dlapilota.pl/,501,0,0
+1619370383021,579,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73606,232,5,5,https://dlapilota.pl/,35,0,0
+1619370383021,35,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,35,0,0
+1619370383056,544,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73227,114,5,5,https://dlapilota.pl/,521,0,0
+1619370383078,534,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73768,232,5,5,https://dlapilota.pl/,17,0,0
+1619370383078,17,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,17,0,0
+1619370383096,516,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73389,114,5,5,https://dlapilota.pl/,486,0,0
+1619370383176,512,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73589,232,5,5,https://dlapilota.pl/,15,0,0
+1619370383176,15,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,5,5,http://www.dlapilota.pl/,15,0,0
+1619370383192,496,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73210,114,5,5,https://dlapilota.pl/,440,0,0
+1619370383159,559,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73571,232,5,5,https://dlapilota.pl/,16,0,0
+1619370383159,16,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,16,0,0
+1619370383175,543,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73192,114,5,5,https://dlapilota.pl/,481,0,0
+1619370383256,565,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73613,232,5,5,https://dlapilota.pl/,14,0,0
+1619370383256,14,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,14,0,0
+1619370383271,550,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73234,114,5,5,https://dlapilota.pl/,525,0,0
+1619370383600,1257,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73529,232,5,5,https://dlapilota.pl/,12,0,0
+1619370383600,12,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,12,0,0
+1619370383613,1244,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73150,114,5,5,https://dlapilota.pl/,1203,0,0
+1619370383822,1036,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73558,232,5,5,https://dlapilota.pl/,13,0,0
+1619370383822,13,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,13,0,0
+1619370383835,1023,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73179,114,5,5,https://dlapilota.pl/,983,0,0
+1619370383613,1334,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73626,232,5,5,https://dlapilota.pl/,19,0,0
+1619370383613,19,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,19,0,0
+1619370383632,1315,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73247,114,5,5,https://dlapilota.pl/,1188,0,0
+1619370383689,1258,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73566,232,5,5,https://dlapilota.pl/,11,0,0
+1619370383689,11,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,5,5,http://www.dlapilota.pl/,11,0,0
+1619370383701,1246,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73187,114,5,5,https://dlapilota.pl/,1119,0,0
+1619370383718,1305,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73470,232,5,5,https://dlapilota.pl/,10,0,0
+1619370383718,10,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,10,0,0
+1619370383728,1295,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73091,114,5,5,https://dlapilota.pl/,1094,0,0
+1619370384858,898,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73669,232,5,5,https://dlapilota.pl/,40,0,0
+1619370384858,40,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,40,0,0
+1619370384898,858,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73290,114,5,5,https://dlapilota.pl/,819,0,0
+1619370384857,913,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73696,232,5,5,https://dlapilota.pl/,41,0,0
+1619370384857,41,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,41,0,0
+1619370384898,872,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73317,114,5,5,https://dlapilota.pl/,819,0,0
+1619370384948,862,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73701,232,5,5,https://dlapilota.pl/,25,0,0
+1619370384948,26,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,5,5,http://www.dlapilota.pl/,25,0,0
+1619370384974,836,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73322,114,5,5,https://dlapilota.pl/,762,0,0
+1619370384948,881,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73701,232,5,5,https://dlapilota.pl/,18,0,0
+1619370384948,19,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,18,0,0
+1619370384967,862,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73322,114,5,5,https://dlapilota.pl/,769,0,0
+1619370385024,846,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73499,232,5,5,https://dlapilota.pl/,11,0,0
+1619370385024,11,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,11,0,0
+1619370385035,835,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73120,114,5,5,https://dlapilota.pl/,719,0,0
+1619370385757,619,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73809,232,5,5,https://dlapilota.pl/,15,0,0
+1619370385757,15,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,15,0,0
+1619370385773,603,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73430,114,5,5,https://dlapilota.pl/,559,0,0
+1619370385771,643,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73553,232,5,5,https://dlapilota.pl/,24,0,0
+1619370385771,24,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,24,0,0
+1619370385795,619,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73174,114,5,5,https://dlapilota.pl/,538,0,0
+1619370385830,626,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73637,232,5,5,https://dlapilota.pl/,15,0,0
+1619370385830,15,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,15,0,0
+1619370385845,611,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73258,114,5,5,https://dlapilota.pl/,512,0,0
+1619370385870,603,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73595,232,5,5,https://dlapilota.pl/,13,0,0
+1619370385870,13,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,13,0,0
+1619370385884,589,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73216,114,5,5,https://dlapilota.pl/,489,0,0
+1619370386415,621,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73480,232,5,5,https://dlapilota.pl/,23,0,0
+1619370386415,23,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,23,0,0
+1619370386439,597,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73101,114,5,5,https://dlapilota.pl/,534,0,0
+1619370386457,596,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73614,232,5,5,https://dlapilota.pl/,16,0,0
+1619370386457,16,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,16,0,0
+1619370386473,580,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73235,114,5,5,https://dlapilota.pl/,502,0,0
+1619370386473,600,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73592,232,5,5,https://dlapilota.pl/,12,0,0
+1619370386473,12,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,12,0,0
+1619370386485,588,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73213,114,5,5,https://dlapilota.pl/,490,0,0
+1619370387036,886,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73535,232,5,5,https://dlapilota.pl/,17,0,0
+1619370387036,17,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,17,0,0
+1619370387054,868,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73156,114,5,5,https://dlapilota.pl/,828,0,0
+1619370387054,885,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73538,232,5,5,https://dlapilota.pl/,19,0,0
+1619370387054,19,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,5,5,http://www.dlapilota.pl/,19,0,0
+1619370387073,866,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73159,114,5,5,https://dlapilota.pl/,808,0,0
+1619370387074,879,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73477,232,5,5,https://dlapilota.pl/,18,0,0
+1619370387074,18,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,5,5,http://www.dlapilota.pl/,18,0,0
+1619370387092,861,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73098,114,5,5,https://dlapilota.pl/,792,0,0
+1619370386377,2475,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73578,232,5,5,https://dlapilota.pl/,17,0,0
+1619370386377,17,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,5,5,http://www.dlapilota.pl/,17,0,0
+1619370386395,2457,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73199,114,5,5,https://dlapilota.pl/,2420,0,0
+1619370387923,949,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-2,text,true,,73731,232,5,5,https://dlapilota.pl/,19,0,0
+1619370387923,19,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-2,text,true,,379,118,5,5,http://www.dlapilota.pl/,19,0,0
+1619370387943,929,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-2,text,true,,73352,114,5,5,https://dlapilota.pl/,870,0,0
+1619370387953,927,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-1,text,true,,73593,232,4,4,https://dlapilota.pl/,11,0,0
+1619370387953,11,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-1,text,true,,379,118,4,4,http://www.dlapilota.pl/,11,0,0
+1619370387965,915,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-1,text,true,,73214,114,4,4,https://dlapilota.pl/,847,0,0
+1619370385811,3144,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73607,232,3,3,https://dlapilota.pl/,18,0,0
+1619370385811,18,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,3,3,http://www.dlapilota.pl/,18,0,0
+1619370385830,3125,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73228,114,3,3,https://dlapilota.pl/,3063,0,0
+1619370387939,1084,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-3,text,true,,73582,232,3,3,https://dlapilota.pl/,17,0,0
+1619370387939,17,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-3,text,true,,379,118,3,3,http://www.dlapilota.pl/,17,0,0
+1619370387956,1067,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-3,text,true,,73203,114,3,3,https://dlapilota.pl/,880,0,0
+1619370388853,938,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73480,232,2,2,https://dlapilota.pl/,19,0,0
+1619370388853,19,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,2,2,http://www.dlapilota.pl/,19,0,0
+1619370388872,919,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73101,114,2,2,https://dlapilota.pl/,858,0,0
+1619370388956,856,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73507,232,2,2,https://dlapilota.pl/,35,0,0
+1619370388956,35,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,2,2,http://www.dlapilota.pl/,35,0,0
+1619370388991,821,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73128,114,2,2,https://dlapilota.pl/,740,0,0
+1619370389792,603,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-5,text,true,,73580,232,2,2,https://dlapilota.pl/,20,0,0
+1619370389792,20,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-5,text,true,,379,118,2,2,http://www.dlapilota.pl/,20,0,0
+1619370389812,583,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-5,text,true,,73201,114,2,2,https://dlapilota.pl/,524,0,0
+1619370389813,597,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73636,232,1,1,https://dlapilota.pl/,17,0,0
+1619370389813,17,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,1,1,http://www.dlapilota.pl/,17,0,0
+1619370389831,579,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73257,114,1,1,https://dlapilota.pl/,506,0,0
+1619370390411,598,dlsapilota.pl main page,200,OK,dlapilota.pl users 1-4,text,true,,73604,232,1,1,https://dlapilota.pl/,18,0,0
+1619370390411,18,dlsapilota.pl main page-0,301,Moved Permanently,dlapilota.pl users 1-4,text,true,,379,118,1,1,http://www.dlapilota.pl/,18,0,0
+1619370390429,580,dlsapilota.pl main page-1,200,OK,dlapilota.pl users 1-4,text,true,,73225,114,1,1,https://dlapilota.pl/,530,0,0
