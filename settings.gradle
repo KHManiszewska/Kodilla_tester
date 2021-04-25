@@ -13,4 +13,5 @@ include 'kodilla-google-selenium'
 include 'kodilla-cucumber'
 include 'kodilla-code-coverage'
 include 'kodilla-newmodule'
+include 'kodilla-testcontainers'
 
