@@ -1,0 +1,7 @@
+testowane endpointy:
+- users (?)
+- titles (https://ta-ebookrental-be.herokuapp.com/titles/?userId=1)
+- rents (https://ta-ebookrental-be.herokuapp.com/rents/?userId=1&itemId=1)
+- items (https://ta-ebookrental-be.herokuapp.com/items/?userId=1&titleId=1)
+
+W Postmanie dla każdego endpointa należy wykonać kolekcję requestów testowych: get, post i delete z odpowiednim body.
