@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "56d80068-f765-4213-967d-c2c399691061",
+		"name": "eBookCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getTitles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/titles/?userId=2",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"titles",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putTitle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 309,\n        \"userId\": 2,\n        \"author\": \"Baba Boo\",\n        \"title\": \"fajnytytul\",\n        \"year\": 1999\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/titles/?userId=2",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"titles",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postTitle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"userId\": 2,\n        \"author\": \"Kasia Kowalska\",\n        \"title\": \"Tytul Dobry\",\n        \"year\": 2030\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/titles/?userId=2",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"titles",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTitle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 35543\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/titles/?userId=2&id=35543",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"titles",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						},
+						{
+							"key": "id",
+							"value": "35543"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

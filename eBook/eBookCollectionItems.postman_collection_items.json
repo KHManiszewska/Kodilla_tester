@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "7e1c09a7-d4cf-4e0f-8b1c-d4de43f00a12",
+		"name": "eBookCollectionItems",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/items/?userId=2&titleId=877",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"items",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						},
+						{
+							"key": "titleId",
+							"value": "877"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putItems",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 898,\n        \"userId\": 2,\n        \"purchaseDate\": \"2020-10-30\",\n        \"status\": \"NULL\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/items/?userId=2&titleId=877",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"items",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						},
+						{
+							"key": "titleId",
+							"value": "877"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"userId\": 2,\n        \"titleId\": 877,\n        \"purchaseDate\": \"2021-09-30\",\n        \"status\": \"AVAILABLE\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/items/?userId=2&titleId=877",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"items",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						},
+						{
+							"key": "titleId",
+							"value": "877"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 35547\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ta-ebookrental-be.herokuapp.com/items/?userId=2&id=35547",
+					"protocol": "https",
+					"host": [
+						"ta-ebookrental-be",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"items",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						},
+						{
+							"key": "id",
+							"value": "35547"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
